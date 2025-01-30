@@ -1,0 +1,24 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "exports":{
+    "./User":"./models/User.ts",
+    "./Admin":"./models/Admin.ts",
+    "./Appointment":"./models/Appointment.ts",
+    "./Doctor":"./models/Doctor.ts",
+    "./Patient":"./models/Patient.ts",
+    "./HR":"./models/HR.ts",
+    "./Review":"./models/Review.ts"
+
+
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": ""
+}

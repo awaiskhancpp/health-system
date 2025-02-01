@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Navbar/>
-    <div className='text-4xl' >Hi!</div>
+    <div className='text-4xl' >Admin</div>
       {/* <Router>
       <Routes>
         

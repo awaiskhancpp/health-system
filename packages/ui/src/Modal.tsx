@@ -1,26 +1,24 @@
-// packages/ui/src/Modal.tsx
 import React from "react";
 
-type ModalProps = {
+interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
+  title: string;
   children: React.ReactNode;
-};
+}
 
-export function Modal({ isOpen, onClose, children }: ModalProps) {
+export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white p-6 rounded-lg shadow-lg">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+      <div className="bg-white p-5 rounded-lg shadow-lg w-96">
+        <div className="flex justify-between items-center mb-3">
+          <h2 className="text-lg font-semibold">{title}</h2>
+          <button onClick={onClose} className="text-red-500">X</button>
+        </div>
         {children}
-        <button
-          onClick={onClose}
-          className="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700"
-        >
-          Close
-        </button>
       </div>
     </div>
   );
-}
+};

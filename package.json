@@ -8,10 +8,14 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.3",
     "@types/express": "^5.0.0",
     "@types/jsonwebtoken": "^9.0.8",
     "@types/node": "^22.12.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
     "prettier": "^3.4.2",
+    "tailwindcss": "^4.0.3",
     "turbo": "^2.3.4",
     "typescript": "^5.7.3"
   },
@@ -32,6 +36,9 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.9.5"
+    "lightningcss": "^1.29.1",
+    "mongoose": "^8.9.5",
+    "react-router-dom": "^7.1.4",
+    "tailwind-merge": "^3.0.1"
   }
 }

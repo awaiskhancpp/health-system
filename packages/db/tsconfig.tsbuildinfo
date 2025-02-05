@@ -1,0 +1,1 @@
+{"root":["./connections.ts","./models/admin.ts","./models/appointment.ts","./models/doctor.ts","./models/hr.ts","./models/patient.ts","./models/review.ts","./models/user.ts"],"version":"5.7.3"}

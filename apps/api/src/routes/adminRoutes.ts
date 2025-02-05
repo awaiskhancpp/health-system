@@ -1,6 +1,5 @@
 // apps/api/src/routes/adminRoutes.ts
 import express from 'express';
-import { Admin } from '@repo/db/models/Admin'
 import { Doctor } from '@repo/db/models/Doctor';
 import { Patient } from '@repo/db/models/Patient';
 import { authMiddleware } from '../middlewares/authMiddleware';

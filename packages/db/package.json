@@ -7,15 +7,13 @@
   },
   "keywords": [],
   "exports":{
-    "./User":"./models/User.ts",
-    "./Admin":"./models/Admin.ts",
-    "./Appointment":"./models/Appointment.ts",
-    "./Doctor":"./models/Doctor.ts",
-    "./Patient":"./models/Patient.ts",
-    "./HR":"./models/HR.ts",
-    "./Review":"./models/Review.ts"
-
-
+    "./models/User":"./models/User.ts",
+    "./models/Admin":"./models/Admin.ts",
+    "./models/Appointment":"./models/Appointment.ts",
+    "./models/Doctor":"./models/Doctor.ts",
+    "./models/Patient":"./models/Patient.ts",
+    "./models/HR":"./models/HR.ts",
+    "./models/Review":"./models/Review.ts"
   },
   "author": "",
   "license": "ISC",

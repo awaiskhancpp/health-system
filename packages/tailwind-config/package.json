@@ -1,0 +1,11 @@
+{
+  "name": "@repo/tailwind-config",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {},
+  "dependencies": {
+    "tailwindcss": "^3.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  }
+}

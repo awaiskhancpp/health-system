@@ -15,7 +15,7 @@ export function Input({ type, placeholder, value, onChange }: InputProps) {
       placeholder={placeholder}
       value={value}
       onChange={onChange}
-      className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+      className="px-4 py-2 mb-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
     />
   );
 }

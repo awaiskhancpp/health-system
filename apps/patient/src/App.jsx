@@ -22,7 +22,6 @@ function App() {
       </BrowserRouter>
       {/* <PatientRegistration/>
       <PatientLogin/> */}
-      <div className="text-xl">Patient</div>
     </>
   )
 }

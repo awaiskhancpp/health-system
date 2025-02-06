@@ -12,7 +12,9 @@
     "./sidebar":"./src/Sidebar.tsx",
     "./table":"./src/Table.tsx",
     "./input":"./src/Input.tsx",
-    "./useAuth":"./src/Auth/useAuth.tsx"
+    "./useAuth":"./src/Auth/useAuth.tsx",
+    "./dashboardLayout":"./src/DashboardLayout.tsx",
+    "./infoButton":"./src/InfoButton.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

@@ -1,27 +1,27 @@
-import React from "react";
-import { useRouter } from "next/router";
+// packages/ui/src/components/Sidebar.tsx
+import React from 'react';
 
-const links = [
-  { label: "Dashboard", path: "/" },
-  { label: "Appointments", path: "/appointments" },
-  { label: "Profile", path: "/profile" },
-];
+interface SidebarProps {
+  title: string;
+  items: string[];
+  onItemClick: (item: string) => void;
+}
 
-export const Sidebar: React.FC = () => {
-  const router = useRouter();
-
+export const Sidebar: React.FC<SidebarProps> = ({ title, items, onItemClick }) => {
   return (
-    <aside className="w-64 bg-gray-800 text-white min-h-screen p-4">
-      <h2 className="text-lg font-semibold mb-4">Menu</h2>
-      <ul>
-        {links.map((link) => (
-          <li key={link.path} className="mb-2">
-            <button className="w-full text-left p-2 hover:bg-gray-700" onClick={() => router.push(link.path)}>
-              {link.label}
-            </button>
+    <div className="w-1/5 bg-gray-100 p-4 border-r-2 border-gray-300">
+      <h2 className="text-xl font-bold mb-4">{title}</h2>
+      <ul className="space-y-2">
+        {items.map((item, index) => (
+          <li
+            key={index}
+            className="cursor-pointer hover:text-blue-500"
+            onClick={() => onItemClick(item)}
+          >
+            {item}
           </li>
         ))}
       </ul>
-    </aside>
+    </div>
   );
 };
